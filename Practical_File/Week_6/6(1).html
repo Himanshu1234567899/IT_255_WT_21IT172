@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> class animal {
+                constructor(type, voice) {
+                    this.type = type; this.voice = voice;
+                    document.write(`<br> type :- ${type}<br> voice in:-${voice} in animal`);
+                } displayanimal() {
+                document.write(`<br> inside animal class`);
+            }
+        } class cat extends animal {
+                constructor(colour, name) {
+                    super(colour, name); this.colour = colour; this.name = name;
+                    document.write(`<br> colour :- ${this.colour}<br> name :- ${this.name} in cat`);
+                } displaycat() { document.write(`<br> inside cat class`); }
+        } let r = new cat('white', 'meow'); r.displayEle();
+        r.displayBike(); 
+    </script>
+</body>
+
+</html>
